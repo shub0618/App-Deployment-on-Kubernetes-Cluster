@@ -21,24 +21,25 @@ The repository is organized as follows:
 
 ```plaintext
 ├── Architecture/
-├── Compose_Files/
+├── Docker-Files/
+├── kubedefs/
 ├── src/
-├── Vagrant_file/
-├── Containerization ServiceList/
 ├── About_the_Project.md/
+├── docker-compose.yml/
 ├── pom.xml/
-├── .gitignore/
 ├── LICENSE/
 └── README.md
 ```
 
-## (Containerization of V-Profile Project)
-In this Project, we will see how to run our Vprofile application on containers. Now this project is more of a trailer of what is coming next in Docker.
-Everything is ready made over here. We just need to bring up the VM and run our Vprofile containers on it.
-In this project, we will see how these things will run on the container together. We are going to run this entire setup on a virtual machine.
-So in the virtual machine, you will have all these containers running and we will access it. And we bring up the containers using the docker compose file.
+## (App-Deploymet-on-Kubernetes-Cluster)
+In this project we are going to use our Java vprofile application which we have Containerized and we're going to run it on Kubernetes Cluster for production.
+So we need a Kubernetes cluster and we are going to use Kops to launch my Kubernetes cluster.
+We also need Containerized application. We are going to use a vprofile. We have already done a project on containerizing our vprofile application.
+So these are two main requirements.
+We need a Kubernetes cluster and we need Containerized application.
 
- 
+Then we are going to write Kubernetes definition files to create our objects on kubernetes cluster, we're going to use deployment service secret and volume.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
